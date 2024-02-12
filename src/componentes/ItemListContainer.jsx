@@ -1,31 +1,24 @@
-import './ItemListContainer'
+import { useState, useEffect} from 'react'
+import { useParams } from 'react-router-dom'
+import arrayProductos from './json/productos.json'
+import ItemList from './ItemList.jsx'
 
-const ItemListContainer = ({item}) => {
-    // class Item {
-    //     constructor(Nombre, Genero, tipo, precio, CantidadInventario){
-    //         this.nombre = Nombre;
-    //         this.genero = Genero;
-    //         this.tipo = tipo;
-    //         this.precio = precio;
-    //         this.cantidadInventario = CantidadInventario;
-    //     }
-    // }
-    
-    // const ItemList =[]
-    // function additem (a, b, c, d, e) {
-    //     const item = new Item(a, b, c, d, e);
-    //     ItemList.push(item);
-    // }
-    
-    // additem('Blusa', 'Mujer', 'ropa', 100, 10);
-    // additem('Pantalon', 'Mujer', 'ropa', 100, 10);
-    // additem('Calcetines', 'Mujer', 'ropa', 100, 10);
-    // additem('Bolsa', 'Mujer', 'accesiorio', 100, 10);
-    // additem('Sueter', 'Mujer', 'ropa', 100, 10);
+
+const ItemListContainer = () => {
+    const [item, setItem] = useState([]);
+    const {id} = useParams();
+
+    useEffect(() => {
+        const promesa = new Promise(resolve => {    
+            resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos)
+        })
+        promesa.then(data => {
+            setItem(data);
+        })
+    }, [id]);
 
     return (
-            <li className="card item"><p>{item}</p><button className="btn btn-dark">Agregar al carrito</button></li>
-
+        <ItemList item={item} />
     )
 }
 
