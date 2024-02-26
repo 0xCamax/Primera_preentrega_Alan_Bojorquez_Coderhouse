@@ -1,25 +1,12 @@
-import CartWidget from "./CartWidget";
+import { useContext } from "react"
+import { ShopContext } from "./context/ShopContext"
 
 const AgregarCarrito = ({item, cantidad}) => {
-    let {nombre, precio, id, imagen} = item
-    function addtoCart() {
-        if (localStorage.getItem(id)){
-        cantidad += JSON.parse(localStorage.getItem(id)).cantidad
-        let nuevoProducto = {nombre, precio, cantidad, imagen}
-        let stringPoducto = JSON.stringify(nuevoProducto);
-        localStorage.setItem(id, stringPoducto)
-        location.reload()
-        } else {
-            let nuevoProducto = {nombre, precio, cantidad, imagen}
-            let stringPoducto = JSON.stringify(nuevoProducto);
-            localStorage.setItem(id, stringPoducto)
-            location.reload()
-        }
-    }
-
+    const {} = useContext(ShopContext)
+    const hola = console.log("hola")
     return (
         <>
-            <button type="button" className="btn btn-light" onClick={addtoCart}>Agregar a Carrito</button>
+            <button type="button" className="btn btn-light" onClick={hola}>Agregar a Carrito</button>
         </>        
     )
 }

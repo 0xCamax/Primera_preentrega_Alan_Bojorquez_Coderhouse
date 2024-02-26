@@ -1,8 +1,12 @@
 import AgregarCarrito from './AgregarCarrito.jsx';
-import useCount from './UseCount.jsx';
+import { useContext } from 'react';
+import { ShopContext } from './context/ShopContext.jsx';
+
 
 const Botones = ({item}) => {
+    const {useCount} = useContext(ShopContext)   
     const {counter, increment, decrement} = useCount(1, 0, 100);
+
     return (
         <div className="container">
             <div className="d-flex justify-content-center">

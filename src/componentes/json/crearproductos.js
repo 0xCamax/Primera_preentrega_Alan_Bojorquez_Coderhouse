@@ -7,15 +7,7 @@ class Item {
         this.categoria = categoria;
         this.descripcion = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!"
         this.precio = precio;
-        this.id = this.generateId();
         this.imagen = imagen;
-    }
-
-    generateId(){
-        let timestamp = Date.now()
-        const randomNumber = Math.floor(Math.random()*1000000);
-        let id = randomNumber + timestamp
-        return id.toString(16)
     }
     
 }

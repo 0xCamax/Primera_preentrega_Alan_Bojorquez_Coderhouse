@@ -11,7 +11,7 @@ const Navbar = () => {
                     <li>
                         <div className="dropdown">
                             <button className="btn btn-primary-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
+                                Categorias
                             </button>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to={"categoria/Abrigos"}>Abrigos</Link></li>

@@ -2,35 +2,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useContext } from "react"
 
 
 library.add(fas)
 
 let carrito = [];
-if(localStorage.length > 0){
-    for (let i = 0; i < localStorage.length; i++) {
-        let key = localStorage.key(i);
-        carrito.push(JSON.parse(localStorage.getItem(key)))
-    }
-}
 
 
-function totalCarrito() {
-    let total = 0
-        if (carrito.length > 0) {
-            for (let i = 0; i < carrito.length; i++) {
-                total += carrito[i].cantidad
-        }
-    }
-    return total
-}
-
-
-const CartWidget = () => {
+const CartWidget = () => {  
 
     return (
     <>
-        <button className='boton' data-bs-toggle="modal" data-bs-target="#CartModal" ><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><span className='notificacion'>{totalCarrito()}</span></button>
+        <button className='boton' data-bs-toggle="modal" data-bs-target="#CartModal" ><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><span className='notificacion'>{1}</span></button>
 
         <div className="modal fade" id="CartModal" tabIndex="-1" aria-labelledby="CartModalLabel" aria-hidden="true">
             <div className="modal-dialog">
