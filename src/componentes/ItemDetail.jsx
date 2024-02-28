@@ -1,29 +1,35 @@
 import Botones from "./Botones";
-import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ShopContext } from "./context/ShopContext";
+import { useProductos } from "./context/ProductosContext";
 
 const ItemDetail = () => {
     const {id} = useParams();
-    const {item} = useContext(ShopContext)
-    const producto = item.filter(detalle => detalle.id == id)   
-    const {nombre, imagen, descripcion, precio} = producto
+    const {items, loading} = useProductos();
 
+    if (loading) {
+        return (
+        <div>Cargando...</div>
+        );
+    }
 
-    console.log(item.precio)
+    const producto = items.filter(detail => detail.id == id)
 
     return (
         <div className="container">
             <div className="d-flex align-items-center">
-                <div>
-                    <img src={imagen} alt={nombre} />
-                </div>
-                <div>
-                    <h1>{nombre}</h1>
-                    <p>{descripcion}</p>
-                    <p><b>${precio}</b></p>
-                    <Botones item={item} />
-                </div>
+                {producto.map(producto => (
+                        <div key={producto.id}  className="d-flex align-items-center">
+                            <div>
+                                <img src={producto.imagen} alt={producto.nombre} height="500" />
+                            </div>
+                            <div className="m-3">
+                                <h1>{producto.nombre}</h1>
+                                <p>{producto.descripcion}</p>
+                                <p><strong>{"$" + producto.precio}</strong></p>
+                                <Botones id={id} />
+                            </div>
+                        </div>
+                    ))}
             </div>
         </div>
     )

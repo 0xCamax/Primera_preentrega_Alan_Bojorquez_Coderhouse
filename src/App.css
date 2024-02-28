@@ -1,7 +1,11 @@
 #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  padding: 100px;
+  text-align: start;
+  width: 100%;
 }
 
 .logo {
