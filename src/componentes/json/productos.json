@@ -1,0 +1,79 @@
+[
+  {
+    "nombre": "Abrigo lana cinturón",
+    "categoria": "Abrigos",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 1000,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S20/67010452_99.jpg?ts=1699261452818&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Chaqueta tweed maxi flor",
+    "categoria": "Chaquetas",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 800,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S20/67094073_70.jpg?ts=1707210196626&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Mono halter detalle metalizado",
+    "categoria": "Vestidos",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 600,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S20/67094069_99.jpg?ts=1704974636020&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Camisa satinada cuello redondo",
+    "categoria": "Camisas",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 300,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T5/fotos/S20/57087728_08.jpg?ts=1694520170868&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Jeans cargo carpenter",
+    "categoria": "Jeans",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 400,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/outfit/S20/67003274_TM-99999999_01.jpg?ts=1700226226437&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Top punto cuello asimétrico",
+    "categoria": "Playeras",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 300,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/outfit/S20/67010466_01-99999999_01.jpg?ts=1697543240090&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Polo manga corta botones",
+    "categoria": "Playeras",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 300,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/outfit/S20/67010465_99-99999999_01.jpg?ts=1697047368435&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Chaqueta crop tweed bolsillos",
+    "categoria": "Chaquetas",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 600,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S20/67074073_08_D6.jpg?ts=1706261699916&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Mono halter detalle metalizado",
+    "categoria": "Vestidos",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 500,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/outfit/S20/67074787_OR-99999999_01.jpg?ts=1705656835281&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Camisa 100% lyocell",
+    "categoria": "Camisas",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 399,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S20/67030436_02.jpg?ts=1698937385410&imwidth=280&imdensity=2"
+  },
+  {
+    "nombre": "Jeans rectos tiro medio aberturas",
+    "categoria": "Jeans",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum, veritatis atque similique, consequuntur, unde excepturi nihil a ea doloribus minima neque magnam dolore voluptatibus velit magni necessitatibus exercitationem eveniet!",
+    "precio": 500,
+    "imagen": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/outfit/S20/67074437_TM-99999999_01.jpg?ts=1704465189872&imwidth=280&imdensity=2"
+  }
+]
