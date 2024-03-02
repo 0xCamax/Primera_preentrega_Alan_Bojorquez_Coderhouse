@@ -1,7 +1,8 @@
 import { useShopContext } from "./context/ShopContext"
 
 export const ResumenOrden = () => {
-    const {cart} = useShopContext()
+    const {cart, carritoFunciones} = useShopContext();
+    const {totalPrecio} = carritoFunciones();
     return (
         <div className='m-5'>
                 <h2># Resumen de la orden</h2>
@@ -14,6 +15,7 @@ export const ResumenOrden = () => {
                                 </div>
                             </div>
                         ))}
+                        <div><p><strong>Total: {totalPrecio()}</strong></p></div>
             </div>
     ) 
 }
